@@ -10,23 +10,108 @@
 Intro message here
 Safe Skies
 An Interactive Fiction by Brent Scott
-Release 1 / Serial number 190220 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+Release 1 / Serial number 190221 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
 
-Galley
-The galley hosts a crampt airplane bathroom, storage carts, and ovens to warm mediocre airplane food. The Cockpit is to the north and First Class is to the south.
+Economy
+Boring, cramped, uncomfortable economy section filled with crying babys. There is a single aisle with sets of three seats on either side. First Class is to the north, seperated by a curtain.
 
-You can see Cockpit Door and Crash Axe here.
+You can see First_Class_Curtain here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1057"></child>
+        <children><child nodeId="node-1048"></child>
+            <child nodeId="node-1052"></child>
+            <child nodeId="node-1003"></child>
+            <child nodeId="node-1044"></child>
         </children>
     </item>
-    <item nodeId="node-1057">
+    <item nodeId="node-1044">
+        <command xml:space="preserve">x flight bag</command>
+        <result xml:space="preserve">You see nothing special about Flight Attendant's Bag.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1045"></child>
+        </children>
+    </item>
+    <item nodeId="node-1045">
+        <command xml:space="preserve">open bag</command>
+        <result xml:space="preserve">You open Flight Attendant's Bag, revealing Paperwork.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1046"></child>
+        </children>
+    </item>
+    <item nodeId="node-1046">
+        <command xml:space="preserve">x paperwork</command>
+        <result xml:space="preserve">You see nothing special about Paperwork.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1047"></child>
+        </children>
+    </item>
+    <item nodeId="node-1047">
+        <command xml:space="preserve">read paperwork</command>
+        <result xml:space="preserve">You see nothing special about Paperwork.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1003">
         <command xml:space="preserve">s</command>
         <result xml:space="preserve">
 First Class
 A luxurious first class cabin with plush reclinig seats and pre-departure champagne flowing. The Galley is to the north and Economy is to the south
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1052">
+        <command xml:space="preserve">open bag</command>
+        <result xml:space="preserve">You open Flight Attendant's Bag, revealing Paperwork.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1053"></child>
+        </children>
+    </item>
+    <item nodeId="node-1053">
+        <command xml:space="preserve">x paperwork</command>
+        <result xml:space="preserve">--Message that gives door code through some clever challanging way, like a pattern or flight number or something--
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1054"></child>
+        </children>
+    </item>
+    <item nodeId="node-1054">
+        <command xml:space="preserve">read paperwork</command>
+        <result xml:space="preserve">--Message that gives door code through some clever challanging way, like a pattern or flight number or something--
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1048">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">(first opening Cockpit Door)
+Door does not budge, however, a keypad next to it flashes amber
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1049"></child>
+            <child nodeId="node-1051"></child>
+        </children>
+    </item>
+    <item nodeId="node-1051">
+        <command xml:space="preserve">open door</command>
+        <result xml:space="preserve">Door does not budge, however, a keypad next to it flashes amber
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1049">
+        <command xml:space="preserve">examine door</command>
+        <result xml:space="preserve">You see nothing special about Cockpit Door.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
