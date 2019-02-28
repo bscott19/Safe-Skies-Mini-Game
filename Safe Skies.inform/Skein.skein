@@ -10,17 +10,22 @@
 Intro message here
 Safe Skies
 An Interactive Fiction by Brent Scott
-Release 1 / Serial number 190227 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+Release 1 / Serial number 190228 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
 
 Seat 34F
 You are in seat 34F of the boring, cramped, uncomfortable economy section filled with crying babies. Next to you is a person in the aisle seat, blocking you from getting you out of your seat.
 
+You can see your Suitcase (closed) here.
+
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1011"></child>
+        <children><child nodeId="node-1039"></child>
+            <child nodeId="node-1012"></child>
+            <child nodeId="node-1009"></child>
+            <child nodeId="node-1044"></child>
             <child nodeId="node-1008"></child>
             <child nodeId="node-1007"></child>
-            <child nodeId="node-1038"></child>
+            <child nodeId="node-1043"></child>
             <child nodeId="node-1003"></child>
         </children>
     </item>
@@ -58,14 +63,48 @@ You are in seat 34F of the boring, cramped, uncomfortable economy section filled
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1038">
+    <item nodeId="node-1043">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1061"></child>
+        </children>
+    </item>
+    <item nodeId="node-1061">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1062"></child>
+        </children>
+    </item>
+    <item nodeId="node-1062">
+        <command xml:space="preserve">s</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1063"></child>
+        </children>
+    </item>
+    <item nodeId="node-1063">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">You can't go that way.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1007">
         <command xml:space="preserve">talk to person</command>
         <result xml:space="preserve">That's not a verb I recognise.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1007">
+    <item nodeId="node-1008">
         <command xml:space="preserve">s</command>
         <result xml:space="preserve">
 First Class
@@ -74,18 +113,70 @@ A luxurious first class cabin with plush reclinig seats and pre-departure champa
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1008">
-        <command xml:space="preserve">open bag</command>
-        <result xml:space="preserve">You open Flight Attendant's Bag, revealing Paperwork.
+    <item nodeId="node-1044">
+        <command xml:space="preserve">open suitcase</command>
+        <result xml:space="preserve">You open your Suitcase, revealing Granola Bar.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1009"></child>
+        <children><child nodeId="node-1045"></child>
         </children>
     </item>
+    <item nodeId="node-1045">
+        <command xml:space="preserve">take granola bar</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1046"></child>
+        </children>
+    </item>
+    <item nodeId="node-1046">
+        <command xml:space="preserve">give granola bar to seatmate</command>
+        <result xml:space="preserve">Person in Aisle Seat doesn't seem interested.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1050"></child>
+        </children>
+    </item>
+    <item nodeId="node-1050">
+        <command xml:space="preserve">give granola bar to seatmate</command>
+        <result xml:space="preserve">Person in Aisle Seat doesn't seem interested.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1051"></child>
+        </children>
+    </item>
+    <item nodeId="node-1051">
+        <command xml:space="preserve">give granola bar to Person in Aisle Seat</command>
+        <result xml:space="preserve">Person in Aisle Seat doesn't seem interested.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1052"></child>
+        </children>
+    </item>
+    <item nodeId="node-1052">
+        <command xml:space="preserve">x Person in Aisle Seat</command>
+        <result xml:space="preserve">A grumpy middle aged man probably on his way to yet another work meeting out of town. He tried to order food an few minutes ago, but his credit card was declined.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1059"></child>
+        </children>
+    </item>
+    <item nodeId="node-1059">
+        <command xml:space="preserve">give granola bar to seatmate</command>
+        <result xml:space="preserve">Person in Aisle Seat doesn't seem interested.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
     <item nodeId="node-1009">
-        <command xml:space="preserve">x paperwork</command>
-        <result xml:space="preserve">--Message that gives door code through some clever challanging way, like a pattern or flight number or something--
+        <command xml:space="preserve">open bag</command>
+        <result xml:space="preserve">You open Flight Attendant's Bag, revealing Paperwork.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -93,13 +184,22 @@ A luxurious first class cabin with plush reclinig seats and pre-departure champa
         </children>
     </item>
     <item nodeId="node-1010">
+        <command xml:space="preserve">x paperwork</command>
+        <result xml:space="preserve">--Message that gives door code through some clever challanging way, like a pattern or flight number or something--
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1011"></child>
+        </children>
+    </item>
+    <item nodeId="node-1011">
         <command xml:space="preserve">read paperwork</command>
         <result xml:space="preserve">--Message that gives door code through some clever challanging way, like a pattern or flight number or something--
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1011">
+    <item nodeId="node-1012">
         <command xml:space="preserve">n</command>
         <result xml:space="preserve">(first opening First_Class_Curtain)
 
@@ -110,62 +210,62 @@ You can see First_Class_Curtain here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1035"></child>
-            <child nodeId="node-1034"></child>
-            <child nodeId="node-1019"></child>
+        <children><child nodeId="node-1036"></child>
+            <child nodeId="node-1035"></child>
+            <child nodeId="node-1020"></child>
+            <child nodeId="node-1018"></child>
             <child nodeId="node-1017"></child>
-            <child nodeId="node-1016"></child>
+            <child nodeId="node-1014"></child>
             <child nodeId="node-1013"></child>
-            <child nodeId="node-1012"></child>
         </children>
     </item>
-    <item nodeId="node-1012">
+    <item nodeId="node-1013">
         <command xml:space="preserve">x first class</command>
         <result xml:space="preserve">You can't see any such thing.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1013">
+    <item nodeId="node-1014">
         <command xml:space="preserve">take overhead bin</command>
         <result xml:space="preserve">That's fixed in place.
 
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1014"></child>
-        </children>
-    </item>
-    <item nodeId="node-1014">
-        <command xml:space="preserve">examine overhead bin</command>
-        <result xml:space="preserve">Storage bins for crew and passenger bags. Too bad you're about a foot too short to reach it
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-1015"></child>
         </children>
     </item>
     <item nodeId="node-1015">
+        <command xml:space="preserve">examine overhead bin</command>
+        <result xml:space="preserve">Storage bins for crew and passenger bags. Too bad you're about a foot too short to reach it
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1016"></child>
+        </children>
+    </item>
+    <item nodeId="node-1016">
         <command xml:space="preserve">open overhead bin</command>
         <result xml:space="preserve">It isn't something you can open.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1016">
+    <item nodeId="node-1017">
         <command xml:space="preserve">open door</command>
         <result xml:space="preserve">Door does not budge, however, a keypad next to it flashes amber
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1017">
+    <item nodeId="node-1018">
         <command xml:space="preserve">open anyways</command>
         <result xml:space="preserve">You can't see any such thing.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1018"></child>
+        <children><child nodeId="node-1019"></child>
         </children>
     </item>
-    <item nodeId="node-1018">
+    <item nodeId="node-1019">
         <command xml:space="preserve">n</command>
         <result xml:space="preserve">(first opening First_Class_Curtain)
 TSA regulations require that passengers remain only in their ticketed cabin. You did not pay for first class.
@@ -173,7 +273,7 @@ TSA regulations require that passengers remain only in their ticketed cabin. You
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1019">
+    <item nodeId="node-1020">
         <command xml:space="preserve">n</command>
         <result xml:space="preserve">
 Galley
@@ -183,96 +283,10 @@ You can see Cockpit Door here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1020"></child>
-        </children>
-    </item>
-    <item nodeId="node-1020">
-        <command xml:space="preserve">n</command>
-        <result xml:space="preserve">(first opening Cockpit Door)
-It seems to be locked.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1030"></child>
-            <child nodeId="node-1023"></child>
-            <child nodeId="node-1021"></child>
+        <children><child nodeId="node-1021"></child>
         </children>
     </item>
     <item nodeId="node-1021">
-        <command xml:space="preserve">x door</command>
-        <result xml:space="preserve">Can you picture the password?
-
-Please enter the 4 digit cockpit door pin code. &gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1022"></child>
-        </children>
-    </item>
-    <item nodeId="node-1022">
-        <command xml:space="preserve">1234</command>
-        <result xml:space="preserve">**BUZZ**  Access granted
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-1023">
-        <command xml:space="preserve">open</command>
-        <result xml:space="preserve">What do you want to open?
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1024"></child>
-        </children>
-    </item>
-    <item nodeId="node-1024">
-        <command xml:space="preserve">open door</command>
-        <result xml:space="preserve">It seems to be locked.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1025"></child>
-        </children>
-    </item>
-    <item nodeId="node-1025">
-        <command xml:space="preserve">x door</command>
-        <result xml:space="preserve">Can you picture the password?
-
-Please enter the 4 digit cockpit door pin code. &gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1026"></child>
-        </children>
-    </item>
-    <item nodeId="node-1026">
-        <command xml:space="preserve">2345</command>
-        <result xml:space="preserve">Incorrect pin, Door remains locked.
-
-Would you like to try again? (Yes or No) &gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1027"></child>
-        </children>
-    </item>
-    <item nodeId="node-1027">
-        <command xml:space="preserve">yes</command>
-        <result xml:space="preserve">
-Please enter the 4 digit cockpit door pin code. &gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1028"></child>
-        </children>
-    </item>
-    <item nodeId="node-1028">
-        <command xml:space="preserve">4567</command>
-        <result xml:space="preserve">Incorrect pin, Door remains locked.
-
-Would you like to try again? (Yes or No) &gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1029"></child>
-        </children>
-    </item>
-    <item nodeId="node-1029">
-        <command xml:space="preserve">no</command>
-        <result xml:space="preserve">
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-    </item>
-    <item nodeId="node-1030">
         <command xml:space="preserve">n</command>
         <result xml:space="preserve">(first opening Cockpit Door)
 It seems to be locked.
@@ -280,41 +294,165 @@ It seems to be locked.
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-1031"></child>
+            <child nodeId="node-1024"></child>
+            <child nodeId="node-1022"></child>
         </children>
     </item>
-    <item nodeId="node-1031">
+    <item nodeId="node-1022">
         <command xml:space="preserve">x door</command>
-        <result xml:space="preserve">A solid matal door to protect the cockpit. Have you found the pin code?
+        <result xml:space="preserve">Can you picture the password?
 
 Please enter the 4 digit cockpit door pin code. &gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1023"></child>
+        </children>
+    </item>
+    <item nodeId="node-1023">
+        <command xml:space="preserve">1234</command>
+        <result xml:space="preserve">**BUZZ**  Access granted
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1024">
+        <command xml:space="preserve">open</command>
+        <result xml:space="preserve">What do you want to open?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1025"></child>
+        </children>
+    </item>
+    <item nodeId="node-1025">
+        <command xml:space="preserve">open door</command>
+        <result xml:space="preserve">It seems to be locked.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1026"></child>
+        </children>
+    </item>
+    <item nodeId="node-1026">
+        <command xml:space="preserve">x door</command>
+        <result xml:space="preserve">Can you picture the password?
+
+Please enter the 4 digit cockpit door pin code. &gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1027"></child>
+        </children>
+    </item>
+    <item nodeId="node-1027">
+        <command xml:space="preserve">2345</command>
+        <result xml:space="preserve">Incorrect pin, Door remains locked.
+
+Would you like to try again? (Yes or No) &gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1028"></child>
+        </children>
+    </item>
+    <item nodeId="node-1028">
+        <command xml:space="preserve">yes</command>
+        <result xml:space="preserve">
+Please enter the 4 digit cockpit door pin code. &gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1029"></child>
+        </children>
+    </item>
+    <item nodeId="node-1029">
+        <command xml:space="preserve">4567</command>
+        <result xml:space="preserve">Incorrect pin, Door remains locked.
+
+Would you like to try again? (Yes or No) &gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1030"></child>
+        </children>
+    </item>
+    <item nodeId="node-1030">
+        <command xml:space="preserve">no</command>
+        <result xml:space="preserve">
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1031">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">(first opening Cockpit Door)
+It seems to be locked.
+
+&gt;</result>
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-1032"></child>
         </children>
     </item>
     <item nodeId="node-1032">
-        <command xml:space="preserve">1234</command>
-        <result xml:space="preserve">**BUZZ**  Access granted
-&gt;</result>
+        <command xml:space="preserve">x door</command>
+        <result xml:space="preserve">A solid matal door to protect the cockpit. Have you found the pin code?
+
+Please enter the 4 digit cockpit door pin code. &gt;</result>
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-1033"></child>
         </children>
     </item>
     <item nodeId="node-1033">
+        <command xml:space="preserve">1234</command>
+        <result xml:space="preserve">**BUZZ**  Access granted
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1034"></child>
+        </children>
+    </item>
+    <item nodeId="node-1034">
         <command xml:space="preserve"></command>
         <result xml:space="preserve">I beg your pardon?
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1034">
+    <item nodeId="node-1035">
         <command xml:space="preserve">examine overhead bin</command>
         <result xml:space="preserve">Storage bins for crew and passenger bags. Too bad you're about a foot too short to reach it
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1035">
+    <item nodeId="node-1036">
         <command xml:space="preserve">examine door</command>
         <result xml:space="preserve">You see nothing special about Cockpit Door.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1039">
+        <command xml:space="preserve">get our of seat</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1040"></child>
+        </children>
+    </item>
+    <item nodeId="node-1040">
+        <command xml:space="preserve">exit seat 34F</command>
+        <result xml:space="preserve">I only understood you as far as wanting to exit.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1041"></child>
+        </children>
+    </item>
+    <item nodeId="node-1041">
+        <command xml:space="preserve">exit</command>
+        <result xml:space="preserve">But you aren't in anything at the moment.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1042"></child>
+        </children>
+    </item>
+    <item nodeId="node-1042">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Economy
+There is a single aisle with sets of three seats on either side. First Class is to the north, seperated by a curtain.
+
+You can see your Suitcase (closed) here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>

@@ -4,13 +4,15 @@ When play begins: Say "Intro message here"
 
 [-----ROOMS/SCENERY/NOT PORTABLE OBJECTS-----]
 
-Seat 34F is a room. It is east of Economy. "You are in seat 34F of the boring, cramped, uncomfortable economy section filled with crying babies. Next to you is a person in the aisle seat, blocking you from getting you out of your seat."
+Seat 34F is a room. "You are in seat 34F of the boring, cramped, uncomfortable economy section filled with crying babies. Next to you is a person in the aisle seat, blocking you from getting you out of your seat."
 
-	Understand "Get out of chair" as Exiting. 
-	Understand "Get up from seat" as Exiting. 
+[	Understand "Get out of chair" as moving west. 
+	Understand "Get up from seat" as moving west. 
+	Understand "leave seat" as moving west.
+	Understand "stand up" as moving west. 
 [As a part of 2nd puzzle, player will start in seat, will need to 'bribe' aise seat passenger with food to let player out]
 
-	[Instead of moving from Seat 34F:
+	Instead of moving west:
 			say "Your seatmate doesn't let you out, you'll have to get him to move out of your way first."]
 	[FIX- so player can't leave seat without geeding seatmate]
 
@@ -97,16 +99,18 @@ Flight Attendant's Bag is a container in Overhead Bin. It is closed and openable
 
 Paperwork is a thing in Flight Attendant's Bag. The description of it is "--Message that gives door code through some clever way, like a pattern or flight number-- (code is 1234 right now)" 
 
-Your Suitcase is a closed openable container in Economy. The description of it is "Typical black carry-on, in which you tried to stuff everything in order to avoid checked bag fees."
+Your Suitcase is a closed openable container in Seat 34F. The description of it is "Typical black carry-on, in which you tried to stuff everything in order to avoid checked bag fees."
 
 	Granola Bar is a thing in Your Suitcase. 
 
 
 [-----NPC-----]
 
-Person in Aisle Seat is an undescribed male person in Economy. The description of Person in Aisle Seat is "A grumpy middle aged man probably on his way to yet another work meeting out of town. He tried to order food an few minutes ago, but his credit card was declined."
+Person in Aisle Seat is an undescribed male person in Seat 34F. The description of Person in Aisle Seat is "A grumpy middle aged man probably on his way to yet another work meeting out of town. He tried to order food an few minutes ago, but his credit card was declined."
 
 Understand "person in the aisle seat" as Person in Aisle Seat. 
+Understand "seatmate" as Person in Aisle Seat. 
+
 
 Instead of giving the Granola Bar to Person in Aisle Seat: say "The man thanks you and is in a better mood, he gets out of his seat and you move in to the aisle";
 remove Granola Bar from play;
