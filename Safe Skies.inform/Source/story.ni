@@ -4,12 +4,17 @@ When play begins: Say "Intro message here"
 
 [-----ROOMS/SCENERY/NOT PORTABLE OBJECTS-----]
 
-Economy is a room. It is south of First_Class_Curtain. "Boring, cramped, uncomfortable economy section filled with crying babys. There is a single aisle with sets of three seats on either side. First Class is to the north, seperated by a curtain."
+Seat 34F is a room. It is east of Economy. "You are in seat 34F of the boring, cramped, uncomfortable economy section filled with crying babies. Next to you is a person in the aisle seat, blocking you from getting you out of your seat."
 
-	Seat 34F is a undescribed container in Economy. It is not portable. 
-		Understand "Get out of chair" as Exiting. 
-		Understand "Get up from seat" as Exiting. 
+	Understand "Get out of chair" as Exiting. 
+	Understand "Get up from seat" as Exiting. 
 [As a part of 2nd puzzle, player will start in seat, will need to 'bribe' aise seat passenger with food to let player out]
+
+	[Instead of moving from Seat 34F:
+			say "Your seatmate doesn't let you out, you'll have to get him to move out of your way first."]
+	[FIX- so player can't leave seat without geeding seatmate]
+
+Economy is a room. It is south of First_Class_Curtain. "There is a single aisle with sets of three seats on either side. First Class is to the north, seperated by a curtain."
 	
 Galley is a room. "The galley hosts a crampt airplane bathroom, storage carts, and ovens to warm mediocre airplane food. The Cockpit is to the north and First Class is to the south."
 
@@ -30,13 +35,9 @@ Instead of opening Overhead Bin:
 
 
 
-[-----DOORS (Both puzzles in this game)-----]
+[-----DOORS-----]
 
-First_Class_Curtain is north of Economy and south of First Class. First_Class_Curtain is a door. The printed name of First_Class_Curtain is "First Class Curtain".  [First_Class_Curtain is locked and lockable.] [Noted out to test first puzzle, which is cockpit door. Right now, curtain is unlocked and will open]
-
-	[Instead of opening First_Class_Curtain: 
-		If XXX: Say "TSA regulations require that passengers remain only in their ticketed cabin. You did not pay for first class."
-		If YYY: say "ZZZ"]
+First_Class_Curtain is north of Economy and south of First Class. First_Class_Curtain is an undescribed door. The printed name of First_Class_Curtain is "First Class Curtain".
 
 Cockpit Door is north of galley and south of Cockpit. Cockpit Door is a door. The Cockpit Door is locked and lockable. 
 	
@@ -96,3 +97,17 @@ Flight Attendant's Bag is a container in Overhead Bin. It is closed and openable
 
 Paperwork is a thing in Flight Attendant's Bag. The description of it is "--Message that gives door code through some clever way, like a pattern or flight number-- (code is 1234 right now)" 
 
+Your Suitcase is a closed openable container in Economy. The description of it is "Typical black carry-on, in which you tried to stuff everything in order to avoid checked bag fees."
+
+	Granola Bar is a thing in Your Suitcase. 
+
+
+[-----NPC-----]
+
+Person in Aisle Seat is an undescribed male person in Economy. The description of Person in Aisle Seat is "A grumpy middle aged man probably on his way to yet another work meeting out of town. He tried to order food an few minutes ago, but his credit card was declined."
+
+Understand "person in the aisle seat" as Person in Aisle Seat. 
+
+Instead of giving the Granola Bar to Person in Aisle Seat: say "The man thanks you and is in a better mood, he gets out of his seat and you move in to the aisle";
+remove Granola Bar from play;
+move player to Economy. 

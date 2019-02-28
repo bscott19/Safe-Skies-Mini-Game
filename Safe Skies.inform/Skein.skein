@@ -10,18 +10,17 @@
 Intro message here
 Safe Skies
 An Interactive Fiction by Brent Scott
-Release 1 / Serial number 190226 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+Release 1 / Serial number 190227 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
 
-Economy
-Boring, cramped, uncomfortable economy section filled with crying babys. There is a single aisle with sets of three seats on either side. First Class is to the north, seperated by a curtain.
-
-You can see First Class Curtain here.
+Seat 34F
+You are in seat 34F of the boring, cramped, uncomfortable economy section filled with crying babies. Next to you is a person in the aisle seat, blocking you from getting you out of your seat.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-1011"></child>
             <child nodeId="node-1008"></child>
             <child nodeId="node-1007"></child>
+            <child nodeId="node-1038"></child>
             <child nodeId="node-1003"></child>
         </children>
     </item>
@@ -55,6 +54,13 @@ You can see First Class Curtain here.
     <item nodeId="node-1006">
         <command xml:space="preserve">read paperwork</command>
         <result xml:space="preserve">You see nothing special about Paperwork.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1038">
+        <command xml:space="preserve">talk to person</command>
+        <result xml:space="preserve">That's not a verb I recognise.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
