@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+
+<Skein rootNode="node-1081">
+    <generator>Inform Mac Client (Inform version 1.65/6.33/6M62)</generator>
+    <item nodeId="node-1081">
+        <command xml:space="preserve">testnpc</command>
+        <result xml:space="preserve">
+
+
+testnpc
+An Interactive Fiction by Brent Scott
+Release 1 / Serial number 190228 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+
+Example Location
+You can see Toy and NPC here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1084"></child>
+        </children>
+    </item>
+    <item nodeId="node-1084">
+        <command xml:space="preserve">take toy</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1085"></child>
+            <child nodeId="node-1116"></child>
+            <child nodeId="node-1087"></child>
+        </children>
+    </item>
+    <item nodeId="node-1087">
+        <command xml:space="preserve">take NPC</command>
+        <result xml:space="preserve">I don't suppose NPC would care for that.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1088"></child>
+        </children>
+    </item>
+    <item nodeId="node-1088">
+        <command xml:space="preserve">give NPC toy</command>
+        <result xml:space="preserve">thanks
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1116">
+        <command xml:space="preserve">give toy to person</command>
+        <result xml:space="preserve">The man thanks you and takes you to the other room
+Location Two
+You can see Laptop here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1085">
+        <command xml:space="preserve">give toy to NPC</command>
+        <result xml:space="preserve">The man thanks you and is in a better mood, he gets out of his seat and you move in to the aisle
+Location Two
+You can see Laptop here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+</Skein>
