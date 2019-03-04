@@ -572,7 +572,15 @@ Shirt: Taken.
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-1273"></child>
+            <child nodeId="node-1279"></child>
         </children>
+    </item>
+    <item nodeId="node-1279">
+        <command xml:space="preserve">give granola bar to person</command>
+        <result xml:space="preserve">Person in Aisle Seat doesn't seem interested.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
     </item>
     <item nodeId="node-1273">
         <command xml:space="preserve">give granola bar to Person in Aisle Seat</command>
