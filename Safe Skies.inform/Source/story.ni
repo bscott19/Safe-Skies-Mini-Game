@@ -16,17 +16,13 @@ Description of player is "You are a pilot traveling as a passenger on your way b
 
 [-----ROOMS/SCENERY/NOT PORTABLE OBJECTS-----]
 
-Seat 34F is a room. "You are in seat 34F of the boring, cramped, uncomfortable economy section filled with crying babies. Next to you is a person in the aisle seat, blocking you from getting you out of your seat."
+Seat 34F is a room. "You are in seat 34F of the boring, cramped, uncomfortable economy section filled with crying babies. Next to you is a passenger sitting in the aisle seat, blocking you from getting you out of your seat."
 
-Economy is a room. It is south of First_Class_Curtain. "There is a single aisle with sets of three seats on either side. First Class is to the north, seperated by a curtain."
-	
-Galley is a room. Galley is north of First Class.  "The galley hosts a crampt airplane bathroom, storage carts, and ovens to warm mediocre airplane food. The Cockpit is to the north and First Class is to the south."
+Economy is a room. "There is a single aisle with sets of three seats on either side. First Class is to the north."
 
-Cockpit is a room. It is north of Cockpit Door. "High Tech flight deck with screens, seats for the pilots, and just enough room for their bags"
+First Class is a room. It is north of Economy. "A luxurious first class cabin with plush reclinig seats and pre-departure champagne flowing. The Galley is to the north and Economy is to the south."
 
-First Class is a room. It is north of First_Class_Curtain. "A luxurious first class cabin with plush reclinig seats and pre-departure champagne flowing. The Galley is to the north and Economy is to the south"
-
-	Overhead Bin is a undescribed container in First Class. It is not portable. 
+	Overhead Bin is a container in First Class. It is not portable. 
 		
 Instead of opening Overhead Bin:
 	if player is carrying Catering Bin:
@@ -34,14 +30,19 @@ Instead of opening Overhead Bin:
 		now Overhead Bin is open;
 	otherwise:
 		say "You're about a foot too short to reach the overhead bin"
+		
+Understand "step on galley bin" as open. 
 	
 	[Overhead bin is out of reach. Player uses bin as step to get access to overhead bin]
+
+	
+Galley is a room. It is north of First Class.  "The galley is a small area, with the boarding door (good luck getting that open, we're in flight and the airplane is pressurised), and jump seats for the flight attendants.  A crash axe is mounted to the wall and there are 1ft high catering bins on the floor . The Cockpit is to the north and First Class is to the south."
+
+Cockpit is a room. It is north of Cockpit Door. "High Tech flight deck with screens, seats for the pilots, and just enough room for their bags"
 
 
 
 [-----DOORS-----]
-
-First_Class_Curtain is north of Economy. First_Class_Curtain is an undescribed door. The printed name of First_Class_Curtain is "First Class Curtain".
 
 Cockpit Door is north of galley and south of Cockpit. Cockpit Door is a door. The Cockpit Door is locked and lockable. 
 	
@@ -90,25 +91,19 @@ Player is carrying TSA Compliant Key. The description of TSA Compliant Key is "S
 	
 	Understand "Key" as TSA Compliant Key. 
 
-There is a Crash Axe. 
-Instead of examining the Galley when the Crash Axe is off-stage:
-    say "A crash axe is mounted to the wall in the galley. There are 1ft high catering bins on the floor";
-    move the Crash Axe to the Galley.
+Crash Axe is an undescribed thing in Galley. 
 
 [Instead of opening Cockpit Door with Crash Axe
 	Say "This door is far too strong, and is designed to not be damaged by the crash axe."]
 	
 [^ Prevent player from breaking door with crash axe]
 
-There is a Catering Bin. 
-Instead of examining the Galley when the Catering Bin is off-stage:
-    say "A crash axe is mounted to the wall in the galley. There are 1ft high galley bins on the floor";
-    move the Catering Bin to the Galley.
+Catering Bin is an undescribed thing in Galley. 
 [Player will be able to use bin as step to get in to overhead bin]
 
 Flight Attendant's Bag is a container in Overhead Bin. It is closed and openable. 
 
-f is a thing in Flight Attendant's Bag. The description of it is "The envelope is sealed shut, but is labeled 'FLIGHT NO. 4808'" 
+Envelope is a thing in Flight Attendant's Bag. The description of it is "The envelope is sealed shut, but is labeled 'FLIGHT NO. 4808'" 
 
 Your Suitcase is a closed openable container in Seat 34F. It is locked and lockable. The description of it is "Typical black carry-on, in which you tried to stuff everything in order to avoid checked bag fees."
 
@@ -120,17 +115,20 @@ Your Suitcase is a closed openable container in Seat 34F. It is locked and locka
 
 [-----NPC-----]
 
-Person in Aisle Seat is an male person in Seat 34F. The description of Person in Aisle Seat is "A grumpy middle aged man probably on his way to yet another work meeting out of town. He tried to order food an few minutes ago, but his credit card was declined."
+Passenger is a male person in Seat 34F. The description of Passenger is "A grumpy middle aged man probably on his way to yet another work meeting out of town. He tried to order food an few minutes ago, but his credit card was declined."
 
-Understand "person in the aisle seat" as Person in Aisle Seat. 
-Understand "seatmate" as Person in Aisle Seat. 
-Understand "person" as Person in Aisle Seat. 
+Understand "seatmate" as Passenger. 
+Understand "person" as Passenger. 
+Understand "guy" as Passenger. 
+Understand "man" as the Passenger.
 
-Instead of giving Granola Bar to Person in Aisle Seat: say "The man thanks you and is in a better mood, he gets out of his seat and you move in to the aisle.";
+Instead of giving Granola Bar to Passenger: say "The man thanks you for giving him food and is in a better mood. He gets out of his seat so that you can move in to the aisle.";
 remove Granola Bar from play;
 move player to Economy. 
 
-Instead of giving Candy to Person in Aisle Seat: say "The man says no thanks, candy is hardly sustenance"
+Instead of giving Candy to Passenger: say "The man says no thanks, candy is hardly sustenance".
+Instead of giving Shirt to Passenger: say "Why would I want your dirty shirt?".
+Instead of giving Suitcase to Passenger: say "That's yours".
 
 
 [-----Ending sequence-----]
